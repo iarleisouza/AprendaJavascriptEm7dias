@@ -1,0 +1,6 @@
+let message = "hey, my name is Andre"
+
+console.log(message.startsWith("Hey"))
+console.log(message.length)
+console.log(message.includes("Andre"))
+console.log(message.endsWith("re"))

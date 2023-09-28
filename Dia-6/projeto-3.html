@@ -214,15 +214,16 @@ main {
         let btn = document.getElementById('btn')
         let color = document.querySelector('.color')
 
+          // No click
          btn.addEventListener('click', function (){
-           let colorRandom = getRandomColor()
-          document.body.style.background = colors[colorRandom]
+           let colorRandom = getRandomColor() // associando a função na variável
+          document.body.style.background = colors[colorRandom] // Aplicando a cor do body (background)
           console.log(colorRandom)
        //  document.querySelector('.color').innerHTML = colors[colorRandom]
           color.textContent = colors[colorRandom]
 
         })
-
+          // Gerar os numeros randomicos
             function getRandomColor() {
               return Math.floor(Math.random() * colors.length)
             
